@@ -1,0 +1,283 @@
+* {
+    color: #1C1C1C;
+    background: none;
+    font-family: Sora;
+}
+
+QStackedWidget {
+    margin: 0;
+    background: url("assets/img/bg.png");
+    background-position: center center;
+}
+
+QLabel#tituloAzulTelaInicial, QLabel#tituloPretoTelaInicial {
+    font-size: 88px;
+}
+
+QLabel#tituloAzulTelaInicial {
+    color: #1d3aa0;
+    font-weight: 700;
+}
+
+QLabel#tituloPretoTelaInicial {
+    font-weight: 400;
+}
+
+QLabel#labelNome {
+    font-family: "Sometype Mono";
+    font-style: italic;
+    font-size: 32px;
+}
+
+QLabel#labelAlerta {
+    font-family: "Sometype Mono Medium";
+    color: #E08E45;
+    font-size: 26px;
+}
+
+QLineEdit#entradaNome, QLineEdit#entradaEquacao {
+    font-family: "Sometype Mono";
+    font-weight: 500;
+    background: qlineargradient(x1:1, y1:0.1, x2:1, y2:.9,
+                stop:0 rgba(255, 255, 255, 50%),
+                stop: 0.5 rgba(195, 195, 195, 25%),
+                stop:1 rgba(255, 255, 255, 50%));
+    border: 3px solid #C6C6C6;
+    border-radius: 2px;
+}
+
+QLineEdit#entradaNome {
+    font-size: 40px;
+    max-width: 500px;
+}
+
+QPushButton#botaoComecar,
+QPushButton#botaoInicio,
+QPushButton#botaoFecharCard,
+QPushButton#botaoProximoCard {
+    background-color: rgba(255, 255, 255, 50%);
+}
+
+QPushButton#botaoComecar,
+QPushButton#botaoInicio {
+    color: #E08E45;
+}
+
+QPushButton#botaoComecar,
+QPushButton#botaoInicio {
+    border: 6px solid #E08E45;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 54px;
+    padding: 12px 64px;
+    max-width: 720px;
+}
+
+QCheckBox#botaoTutorial {
+    border-radius: 12px;
+    border: 4px solid #1D3AA0;
+    background: rgba(255, 255, 255, 0.25);
+
+    color: #1D3AA0;
+    font-family: "Sora SemiBold";
+    font-size: 30px;
+    line-height: normal;
+    padding: 12px 48px;
+}
+
+QPushButton#botaoInicio {
+    font-size: 46px;
+    padding: 24px 48px;
+}
+
+QCheckBox#botaoTutorial {
+    spacing: 28px;
+}
+
+QCheckBox#botaoTutorial:indicator {
+    width: 30px;
+    height: 30px;
+}
+
+QPushButton#botaoComecar:pressed,
+QPushButton#botaoInicio:pressed,
+QPushButton#botaoFecharCard:pressed,
+QPushButton#botaoProximoCard:pressed {
+    color: #f5f5f5;
+}
+
+QPushButton#botaoComecar:pressed,
+QPushButton#botaoInicio:pressed {
+    background-color: #E08E45;
+}
+
+QPushButton#botaoFecharCard:pressed,
+QPushButton#botaoProximoCard:pressed {
+    background-color: #FFC61A;
+}
+
+QPushButton#botaoRetornar,
+QPushButton#botaoAvancar {
+    background-color: #1D3AA0;
+    border-radius: 32px;
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    margin-top: 16px;
+}
+
+QPushButton#botaoRetornar {
+    margin-left: 16px;
+}
+
+QPushButton#botaoAvancar {
+    margin-right: 16px;
+}
+
+QLabel#labelDesafio,
+QLabel#labelDificuldade {
+    font-weight: 200;
+}
+
+QLabel#labelDesafio,
+QLabel#labelPontosTotais {
+    font-size: 48px;
+}
+
+QLabel#labelDificuldade {
+    font-size: 48px
+}
+
+QLabel#labelEquacao {
+    color: #1D3AA0;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 16px 0 16px 0;
+}
+
+QWidget#containerLabelEquacao {
+    border-radius: 24px;
+    border: 6px solid #1D3AA0;
+    background: rgba(240, 240, 240, 0.4);
+}
+
+QLineEdit#entradaEquacao {
+    font-size: 56px;
+}
+
+QLabel#labelPontos {
+    color: #E08E45;
+    font-size: 56px;
+    font-weight: 600;
+}
+
+QLabel#labelTempoRestante {
+    color: #1D3AA0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+QPushButton#botaoGrid {
+    text-align: center;
+    font-family: "Sometype Mono";
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px 32px;
+    border: 2px solid #1D3AA0;
+    border-radius: 4px;
+    background: #fbfbfb;
+}
+
+QLabel#iconeResposta {
+    margin: 0;
+}
+
+QWidget#containerLayoutTutorialEsquerda,
+QWidget#containerLayoutTutorialDireita {
+    height: 100%;
+}
+
+QWidget#cardTutorial {
+    border-radius: 24px;
+    border: 8px solid #1D3AA0;
+    background: red;
+}
+
+QLabel#labelTituloCard {
+    color: #1D3AA0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+QLabel#labelDescricaoCard {
+    font-size: 20px;
+    line-height: normal;
+}
+
+QPushButton#botaoFecharCard,
+QPushButton#botaoProximoCard {
+    color: #FFC61A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 2px solid #FFC61A;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+QLabel#labelTituloAzul, QLabel#labelTituloPreto {
+    font-size: 112px;
+    line-height: 100%;
+}
+
+QLabel#labelTituloAzul {
+    color: #1D3AA0;
+    font-weight: 700;
+}
+
+QLabel#labelPontuacaoPreta, QLabel#labelPontuacaoLaranja {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+QLabel#labelPontuacaoLaranja {
+    color: #E08E45;
+    font-weight: 400;
+}
+
+QLabel#labelPontuacao {
+    color: #E08E45;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+QPushButton#botaoInicio {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+QLabel#labelDescricaoRedeSocial {
+    font-family: "Sora SemiBold";
+    font-size: 24px;
+    line-height: 130%;
+}
+
+QLabel#labelNomeJogador {
+    font-weight: 700;
+    color: #1D3AA0;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+QLabel#labelNomeAutor {
+    font-family: "Sometype Mono";
+    font-weight: 700;
+    color: #1D3AA0;
+    font-size: 40px;
+    line-height: 100%;
+}
